@@ -76,7 +76,7 @@ if room11_file and room12_file:
 
         df_combined = pd.concat([df_room11, df_room12], ignore_index=True)
         st.success(f"✅ Parsed successfully. Total records: {len(df_combined)}")
-        st.dataframe(df_combined.head(10))
+       
 
         if uploaded_mapping:
             try:
@@ -109,3 +109,4 @@ if room11_file and room12_file:
 
 else:
     st.info("📥 Please upload both ROOM11 and ROOM12 Huawei configuration files to begin.")
+
